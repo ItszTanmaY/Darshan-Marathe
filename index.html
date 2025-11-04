@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan Marathe - Creative Director</title>
+    <link rel="icon" type="image/x-icon" href="generated-image.ico">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+       <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- --- NEW VIDEO MODAL (HTML) --- -->
+    <div class="video-modal" id="videoModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <video src="" id="modalVideoPlayer" controls playsinline></video>
+    </div>
+    <!-- --- END NEW VIDEO MODAL --- -->
+
+
+       <!-- Animated Background -->
+    <div class="bg-gradient">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#home" class="logo"><img src="logo.jpg" alt=""></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reels">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-toggle" id="mobileToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-subtitle">Creative Director & Visual Artist</div>
+            <h1 class="hero-title">Darshan Marathe</h1>
+            <p class="hero-description">
+                Crafting cinematic narratives and stunning visual experiences that captivate audiences 
+                and bring stories to life through the art of film, photography, and digital media.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
+                <a href="#reels" class="btn btn-secondary">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <div class="section-subtitle">Get to Know Me</div>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-description">
+                A passionate storyteller with a unique vision for creating memorable visual experiences
+            </p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="img1.jpg" alt="Darshan Marathe">
+            </div>
+            <div class="about-text">
+                <h3>Creative Director & Visual Artist</h3>
+                <p>
+                    As a creative director and visual artist, I blend storytelling with innovative design to 
+                    create compelling narratives. With years of experience in film, photography, and digital 
+                    media, I bring a unique perspective to every project.
+                </p>
+                <p>
+                    My work is driven by passion, precision, and a commitment to excellence. I specialize in 
+                    crafting cinematic experiences that resonate with audiences and leave lasting impressions.
+                </WELCOME>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-header">
+            <div class="section-subtitle">My Expertise</div>
+            <h2 class="section-title">Skills & Specializations</h2>
+            <p class="section-description">
+                Mastering the art of visual storytelling through diverse creative disciplines
+            </p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h4 id="phead">Graphics Designer</h4>
+                <p id="phead" > Designing with compelling visual storytelling and innovative direction techniques.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h4 id="phead">Photography</h4>
+                <p id="phead">Capturing moments through artistic composition and expert use of light and shadow.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h4 id="phead"> Video Editor </h4>
+                <p id="phead"> Professional video editing and content creation services from concept to completion.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h4 id="phead">Brand Marketing</h4>
+                <p id="phead">Elevate your brand with compelling promotional content that drives engagement and growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="section-header">
+            <div class="section-subtitle">What I Offer</div>
+            <h2 class="section-title">Services</h2>
+            <p class="section-description">
+                Comprehensive creative solutions tailored to bring your vision to life
+            </p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h4 id="shead" >Promotion reels </h4>
+                <p id="shead">  End-to-end video production services including concept development, filming, and post-production.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h4 id="shead" >Video Editing</h4>
+                <p id="shead" >Professional editing services with advanced color grading, visual effects, and motion graphics.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h4 id="shead" >Photography</h4>
+                <pv id="shead">Commercial and artistic photography services for portraits, events, products, and architectural projects.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h4 id="shead" >Brand Reels</h4>
+                <p id="shead" >Viral-worthy short-form content optimized for Instagram, TikTok, and YouTube Shorts.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h4 id="shead" >Festival Reels</h4>
+                <p id="shead" >Celebrate every occasion with vibrant festival reels full of energy and creativity.</p>
+            </div>
+
+              <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-landmark"></i></div>
+                    <h4 id="shead" >Political Reels</h4>
+                    <p id="shead" > Impactful political campaign videos that resonate with your audience.</p>
+                </div>
+
+                            <div class="service-card featured">
+                <div class="service-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h4 id="shead" >Paid Editing Available</h4>
+                <p id="shead" >Professional video editing with cinematic effects, color grading, and post-production excellence.</p>
+            </div>
+                <div class="service-card featured">
+                    <div class="service-icon"><i class="fas fa-users-cog"></i></div>
+                    <h4 id="shead" >Account Handling Available</h4>
+                    <p id="shead" >Complete social media management to grow your online presence and engagement.</p>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h4 id="shead" >Monthly Package Available</h4>
+                    <p id="shead" >Affordable monthly packages for consistent content creation and social media excellence.</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- Reels Showcase -->
+<section class="reel-showcase" id="reels">
+    <div class="section-header">
+        <div class="section-subtitle">My Work</div>
+        <h2 class="section-title">Portfolio Reels</h2>
+        <p class="section-description">
+            A collection of my finest work showcasing creativity and technical excellence
+        </p>
+    </div>
+    <div class="reel-grid">
+        <!-- --- IMPORTANT: VIDEO PATHS REPLACED WITH PUBLIC URLS --- -->
+        <div class="reel-item" data-video="vdo1.mp4">
+            <img src="ss1.jpg" alt="Wedding Reel">
+            <div class="reel-overlay">
+                <h3 id="thead">Wedding Cinematic Reel</h3>
+                <p id="thead" >Romantic storytelling through lens</p>
+            </div>
+        </div>
+        <div class="reel-item" data-video="vdo2.mp4">
+            <img src="ss2.jpg" alt="Car Delivery">
+            <div class="reel-overlay">
+                <h3 id="thead" >Luxury Car Delivery</h3>
+                <p id="thead" >High-end automotive showcase</p>
+            </div>
+        </div>
+        <div class="reel-item" data-video="vdo3.mp4">
+            <img src="ss3.png" alt="Corporate">
+            <div class="reel-overlay">
+                <h3 id="thead" >Corporate Brand Film</h3>
+                <p id="thead" >Professional brand storytelling</p>
+            </div>
+        </div>
+        <div class="reel-item" data-video="vdo4.mp4">
+            <img src="ss4.png" alt="Music Video">
+            <div class="reel-overlay">
+                <h3 id="thead" >Music Video Production</h3>
+                <p id="thead" >Artistic visual narratives</p>
+            </div>
+        </div>
+    
+    </div>
+</section>
+
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-header">
+            <div class="section-subtitle">Client Feedback</div>
+            <h2 class="section-title">Testimonials</h2>
+            <p class="section-description">
+                What clients say about working with me
+            </p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p class="testimonial-text" id="testimonialText">
+                 Bhau, the editing is number one! Every video was totally worth the money 💯 You did such good work for the amount we paid, made the videos really well, and delivered them on time. Thank you so much for the videos 😊🥰
+                </p>
+                <div class="testimonial-author" id="testimonialAuthor">Rajesh Kumar</div>
+                <div class="testimonial-role" id="testimonialRole">CEO, TechVision India</div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="control-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="control-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <div class="section-subtitle">Get In Touch</div>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-description">
+                Ready to bring your vision to life? Let's create something amazing together
+            </p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>
+                    Whether you have a project in mind or just want to chat about creative possibilities, 
+                    I'm always excited to connect with fellow creatives and potential clients.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@darshanmarathe.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 8208186030</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nandurbar, Maharashtra, India</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <!-- Footer -->
+<footer class="footer">
+    <p class="footer-credit">
+        Designed & Developed with ❤️ by 
+        <span class="dev-name">Tanmay Wadile</span>
+    </p>
+    <p>&copy; 2025 <span>Darshan Marathe</span>. All rights reserved.</p>
+</footer>
+
+    <script src="gsap.js"></script>
+</body>
+</html>
+
